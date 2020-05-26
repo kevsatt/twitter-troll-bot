@@ -11,6 +11,11 @@ The NLP library spaCy is utilized to tokenize tweets and identify multiple subje
 # Prerequisites:
 1. A Twitter account and Twitter developer account. Instructions on how to get your API credentials can be found [here](https://www.slickremix.com/docs/how-to-get-api-keys-and-tokens-for-twitter/).
 2. A Twilio account for sending text messages. Sign up [here](https://www.twilio.com) and get your API key.
+3. Install spaCy language model. 
+```
+pip install spacy
+python -m spacy download en_core_web_sm
+```
   
 # Limitations:
 1. The account to be followed cannot be private. If the account is private, then the user will have to allow the bot to follow them in order to allow the bot to read the user's tweets via a stream listener.
